@@ -10,11 +10,13 @@ public class Authenticator {
     if (customer == null) {
       throw new LoginException("Username not found");
     }
-if (password.equals (customer.getPassword ())){
-  
-}
+    if (password.equals(customer.getPassword())) {
+      customer.setAuthenticated(true);
+      return customer;
+    }
 
-    return customer;
+    else
+      throw new LoginException("Incorrect password");
   }
 
   public static void logout(Customer customer) {
