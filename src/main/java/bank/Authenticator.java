@@ -10,6 +10,7 @@ public class Authenticator {
     if (customer == null) {
       throw new LoginException("Username not found");
     }
+    return customer;
   }
 
   public static void logout(Customer customer) {
