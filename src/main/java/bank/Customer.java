@@ -17,6 +17,7 @@ public class Customer {
     setUsername(username);
     setPassword(password);
     setAccountId(accountId);
+    setAuthenticated(false);
   }
 
   public boolean isAuthenticated() {
