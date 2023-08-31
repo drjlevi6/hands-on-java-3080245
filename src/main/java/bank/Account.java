@@ -5,7 +5,7 @@ public class Account {
   private String type;
   private double balance;
 
-  public Account(int id, String type, double balance){
+  public Account(int id, String type, double balance) {
     setId(id);
     setType(type);
     setBalance(balance);
@@ -34,4 +34,5 @@ public class Account {
   public void setBalance(double balance) {
     this.balance = balance;
   }
+
 }
