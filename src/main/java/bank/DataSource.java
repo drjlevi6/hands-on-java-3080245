@@ -29,7 +29,6 @@ public class DataSource {
 
     try (Connection connection = connect();
         PreparedStatement statement = connection.prepareStatement(sql)) {
-
       statement.setString(1, username);
       try (ResultSet resultSet = statement.executeQuery()) {
         customer = new Customer(
@@ -72,9 +71,9 @@ public class DataSource {
   public static void main(String[] args) {
     connect();
     /*
-    Customer customer = getCustomer("twest8o@friendfeed.com");
-    Account account = getAccount(customer.getAccountId());
-    System.out.println(account.getBalance());
-    */
+     * Customer customer = getCustomer("twest8o@friendfeed.com");
+     * Account account = getAccount(customer.getAccountId());
+     * System.out.println(account.getBalance());
+     */
   }
 }
