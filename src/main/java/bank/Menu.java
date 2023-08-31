@@ -49,6 +49,11 @@ public class Menu {
           amount = scanner.nextDouble();
           account.withdraw(amount);
           break;
+
+        case 3:
+          System.out.println("Current balance: " + account.getBalance());
+          break;
+
       }
     }
   }
