@@ -54,6 +54,11 @@ public class Menu {
           System.out.println("Current balance: " + account.getBalance());
           break;
 
+        case 4:
+          Authenticator.logout(customer);
+          System.out.println(
+              "Thanks for banking at Globe Bank International!");
+          break;
       }
     }
   }
