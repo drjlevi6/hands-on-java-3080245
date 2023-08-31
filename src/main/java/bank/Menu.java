@@ -43,6 +43,12 @@ public class Menu {
           amount = scanner.nextDouble();
           account.deposit(amount);
           break;
+
+        case 2:
+          System.out.println("How much would you like to withdraw?");
+          amount = scanner.nextDouble();
+          account.withdraw(amount);
+          break;
       }
     }
   }
