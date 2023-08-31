@@ -42,6 +42,7 @@ public class Menu {
           System.out.println("How much would you like to deposit?");
           amount = scanner.nextDouble();
           account.deposit(amount);
+          break;
       }
     }
   }
