@@ -70,8 +70,11 @@ public class DataSource {
   }
 
   public static void main(String[] args) {
+    connect();
+    /*
     Customer customer = getCustomer("twest8o@friendfeed.com");
     Account account = getAccount(customer.getAccountId());
     System.out.println(account.getBalance());
+    */
   }
 }
