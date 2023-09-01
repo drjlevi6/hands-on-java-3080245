@@ -36,7 +36,9 @@ public class Account {
   }
 
   public void deposit(double amount) {
-
+    if (amount < 1) {
+      throw new AmountException("The minimum deposit us 1.");
+    }
   }
 
   public void withdraw(double amount) {
