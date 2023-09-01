@@ -42,7 +42,7 @@ public class Account {
       throw new AmountException("The minimum deposit us 1.");
     } else {
       double newBalance = balance + amount;
-      setBalance(newBalance);c
+      setBalance(newBalance);
     }
   }
 
