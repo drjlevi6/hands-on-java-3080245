@@ -40,6 +40,9 @@ public class Account {
   public void deposit(double amount) throws AmountException {
     if (amount < 1) {
       throw new AmountException("The minimum deposit us 1.");
+    } else {
+      double newBalance = balance + amount;
+      setBalance(newBalance);
     }
   }
 
