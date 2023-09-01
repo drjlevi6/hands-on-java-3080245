@@ -1,5 +1,6 @@
 package bank;
 
+import bank.exceptions.AmountException;
 import java.security.InvalidAlgorithmParameterException;
 import java.util.Scanner;
 import javax.security.auth.login.LoginException;
