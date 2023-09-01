@@ -48,5 +48,9 @@ public class Account {
 
   public void withdraw(double amount) {
 
+    if (amount < 0) {
+      throw new AmountException(
+        "The withdrawal amount must be greater than 0.");
+    }
   }
 }
